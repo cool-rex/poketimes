@@ -10,7 +10,7 @@ const Rainbow = (wrappedComponent)=>{
     return(props) => {
         return(
             <div className={className}>
-                <wrappedComponent/>
+                <wrappedComponent {...props}/>
             </div>
         )
     }
@@ -18,3 +18,4 @@ const Rainbow = (wrappedComponent)=>{
 
 }
 
+export default Rainbow
